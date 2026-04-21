@@ -1,0 +1,117 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.card {
+  background: radial-gradient(
+    circle at top,
+    var(--dark-blue),
+    var(--very-dark-blue)
+  );
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 380px;
+}
+
+.star-icon {
+  background-color: #262f38;
+  color: var(--orange);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: var(--light-grey);
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.rating-btn {
+  background-color: #262f38;
+  color: var(--medium-grey);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rating-btn:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.rating-btn.active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thank-you-card {
+  text-align: center;
+}
+
+.selection-badge {
+  background-color: #262f38;
+  color: var(--orange);
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.thank-you-img {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
